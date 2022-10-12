@@ -21,8 +21,8 @@ export const SignIn = () => {
           <div  className={styles.maindiv}>
         
         
-          <img className = {styles.logo} src="/src/assets/Group.png" alt="lendsqr" />
-          <img src="/src/assets/lendsqr.png" alt="logo" />
+          <img className = {styles.logo} src="/assets/Group.png" alt="lendsqr" />
+          <img src="/assets/lendsqr.png" alt="logo" />
         
         
         </div>

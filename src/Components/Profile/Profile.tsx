@@ -1,6 +1,7 @@
 import React, { useEffect , useState} from 'react'
 import styles from "./Profile.module.scss"
 import axios from 'axios'
+import { useCallback } from 'react'
 import { infoheaders } from '../../utils/data'
 import { useNavigate } from 'react-router-dom'
 function Profile() {
@@ -9,37 +10,35 @@ function Profile() {
     const backwards = () => {
         navigate('/users')
     }
-    const [data, setData] = useState(()=>{
-        return JSON.parse(window.localStorage.getItem('MY_USERS_DETAILS')!)
-    });
-    //const [data, setItems] = useState({});
+    const [data, setData] = useState(
+    JSON.parse(window.localStorage.getItem('MY_USERS_DETAILS') || "{}")
+    );
 
-    const fetchData = async() => {
-        await axios.get(`https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/9`)
+
+    console.log(data , "oak")
+    const fetchData = useCallback(() => {
+         axios.get(`https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/9`)
         .then((response) => {
             const value = response.data;
             setData(value);
-            console.log(value);
+           window.localStorage.setItem('MY_USERS_DETAILS', JSON.stringify(value)!);
         })
         .catch((error) => {
-            console.log("error")
+            console.log(error)
         })
+        
+
+
+        }, [])
     
       
       
-    }
+    
     useEffect(() =>{
        
         fetchData();
-        window.localStorage.setItem('MY_USERS_DETAILS', JSON.stringify(data));
+       
         }, [fetchData])
-
-
-        useEffect(()=>{
-            const data =  window.localStorage.getItem('MY_USERS_DETAILS');
-            if ( data !== null ) setData(JSON.parse(data));
-           // console.log(data.createdAt)
-        }, [])
       
    
   return (
@@ -64,13 +63,13 @@ function Profile() {
                 <div className={styles.flexin}>
                 <div className={styles.infoname}>
                 <p className={styles.name}>{data?.profile?.firstName} {data?.profile?.lastName}</p>
-                {/* <p className={styles.code}>{data?.accountNumber}</p> */}
+                <p className={styles.code}>{data.accountNumber}</p>
                 </div>
                 <div className={styles.bar}></div>
                 <img src="/assets/tier.png" alt="tier" className={styles.tier} />
                 <div className={styles.bar1}></div>
                 <div className={styles.infoname}>
-                <p className={styles.name}>₦{data.accountBalance}</p>
+                <p className={styles.name}>₦{data?.accountBalance}</p>
                 <p className={styles.code}>919234578/Providus Bank</p>
                 </div>
                 </div>

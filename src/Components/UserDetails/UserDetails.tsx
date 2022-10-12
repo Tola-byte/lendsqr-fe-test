@@ -6,8 +6,9 @@ import Sidebar from '../Sidebardetails/Sidebar'
 const UserDetails = () => {
   return (
     <div>
-    <Nav/>
-    <Sidebar/>
+      
+    <Nav/> 
+    <Sidebar/> 
     <Profile/>
     </div>
   )

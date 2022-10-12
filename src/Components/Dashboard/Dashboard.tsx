@@ -5,11 +5,16 @@ import Sidebar from '../Sidebar/Sidebar'
 import Tables from '../Tables/Tables'
 import Pagination from '../Pagination/Pagination'
 import styles from '../Users/Users.module.scss'
+import { useNavigate } from 'react-router-dom'
 const Dashboard = () => {
+  const navigate = useNavigate();
+  const route = ()=> {
+    navigate('/users')
+  }
   return (
     <div>
         <Nav/>
-        <a href="/users">
+        <a className={styles.link} onClick={route}>
         <div className={styles.contain}>
         <p className={styles.text}>Next</p>
             <img src="/assets/arrow.png"  className = {styles.next} alt="" />

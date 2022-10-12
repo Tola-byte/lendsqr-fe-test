@@ -64,7 +64,7 @@ function Profile() {
                 <div className={styles.flexin}>
                 <div className={styles.infoname}>
                 <p className={styles.name}>{data?.profile?.firstName} {data?.profile?.lastName}</p>
-                <p className={styles.code}>{data?.accountNumber}</p>
+                {/* <p className={styles.code}>{data?.accountNumber}</p> */}
                 </div>
                 <div className={styles.bar}></div>
                 <img src="/assets/tier.png" alt="tier" className={styles.tier} />

@@ -14,21 +14,24 @@ const Navbar = () => {
   return (
         <div className={styles.navcontainer}>
             <div className={styles.contain}>
-        <img className = {styles.logo} src="./src/assets/Group.png" alt="lendsqr" />
+                <a href="/">
+                <img className = {styles.logo} src="/assets/Group.png" alt="lendsqr" />
+                </a>
+       
 
         <div className={styles.searchbox}>
             <input className = {styles.input} type="text"placeholder='Search for anything' />
-            <div className={styles.show}><img src="./src/assets/search.png" alt="search" /></div>
+            <div className={styles.show}><img src="/assets/search.png" alt="search" /></div>
         </div>
         </div>
 
 
         <div className={styles.navicons}>
             <a href="">Docs</a>
-            <img src="./src/assets/bell.png" alt="notif" />
-            <img className = {styles.avatar} src="./src/assets/avatar.png" alt="human" />
+            <img src="/assets/bell.png" alt="notif" />
+            <img className = {styles.avatar} src="/assets/avatar.png" alt="human" />
             <p className={styles.name}>Aletha</p>
-            <img className={styles.dropdown} src="./src/assets/dropdown.png" alt="dropdown" />
+            <img className={styles.dropdown} src="/assets/dropdown.png" alt="dropdown" />
         </div>
         </div>
 

@@ -1,16 +1,29 @@
-import { useState } from 'react'
+import { SetStateAction, useState } from 'react'
 import styles from './SignIn.module.scss'
 import {useNavigate} from 'react-router'
 
 
 export const SignIn = () => {
-  const [email,setEmail]= useState("")
-  const [password, setPassword] = useState("")
+  // const [email,setEmail]= useState("")
+  // const [password, setPassword] = useState("")
+  const [passwordType, setPasswordType] = useState("password");
+  const [passwordInput, setPasswordInput] = useState("");
+  const handlePasswordChange =(evnt: { target: { value: SetStateAction<string>; }; })=>{
+      setPasswordInput(evnt.target.value);
+  }
+  const togglePassword =()=>{
+    if(passwordType==="password")
+    {
+     setPasswordType("text")
+     return;
+    }
+    setPasswordType("password")
+  }
   const navigate = useNavigate();
 
   const handleSubmission = () => {
-    setEmail(email)
-    setPassword(password)
+    // setEmail(email)
+    // setPassword(password)
     navigate("/dashboard");
   }
 
@@ -32,10 +45,16 @@ export const SignIn = () => {
             <h5>Enter details to login.</h5>
 
             <form action="" onSubmit = {handleSubmission}>
-            <input className={styles.input} type="email" placeholder='Email' value={email} />
+            <input className={styles.input} type="email" placeholder='Email'  />
             <div className={styles.passwordfield}>
-            <input className = {styles.input} type="password" placeholder='Password' value={password} />
-            <p className={styles.show}>SHOW</p>
+            <input className = {styles.input} placeholder='Password' type={passwordType} onChange={handlePasswordChange} value={passwordInput}  />
+            {
+              passwordType==="password" ? 
+              <p className={styles.show} onClick={togglePassword}>SHOW</p>
+              :
+              <p className={styles.show} onClick={togglePassword}>HIDE</p>
+            }
+           
             </div>
 
             <p className={styles.forgot}>FORGOT PASSWORD?</p>

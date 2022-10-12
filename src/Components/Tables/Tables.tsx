@@ -23,14 +23,14 @@ const Tables = () => {
                 <tr>
                     <th className={styles.filter}>
                     <td className={styles.head}> <span>ORGANIZATION</span> 
-                    <img src="./src/assets/filter-results-button.png" alt="" />
+                    <img src="/assets/filter-results-button.png" alt="" />
                     </td>
                     </th>
                     
                    
                     <th className={styles.filter}>
                     <td className={styles.head}><span>USERNAME</span>
-                    <img src="./src/assets/filter-results-button.png" alt="" />
+                    <img src="/assets/filter-results-button.png" alt="" />
                     </td>
                    
                     </th>
@@ -38,7 +38,7 @@ const Tables = () => {
                     <th className={styles.filter}>
                     <td className={styles.head}>
                         <span>EMAIL</span>
-                    <img src="./src/assets/filter-results-button.png" alt="" />
+                    <img src="/assets/filter-results-button.png" alt="" />
                     
                     </td>
                     
@@ -47,7 +47,7 @@ const Tables = () => {
                     <th className={styles.filter}>
                     <td className={styles.head}>
                         <span>PHONE</span>
-                    <img src="./src/assets/filter-results-button.png" alt="" />
+                    <img src="/assets/filter-results-button.png" alt="" />
                     </td>
                     
                     </th>
@@ -57,7 +57,7 @@ const Tables = () => {
                         <span>
                         DATE
                         </span>
-                    <img src="./src/assets/filter-results-button.png" alt="" />
+                    <img src="/assets/filter-results-button.png" alt="" />
                     </td>
                     </th>
 
@@ -66,7 +66,7 @@ const Tables = () => {
                         <span>
                         STATUS
                         </span>
-                    <img src="./src/assets/filter-results-button.png" alt="" />
+                    <img src="/assets/filter-results-button.png" alt="" />
                     </td>
                     </th>
                     </tr>
@@ -87,13 +87,13 @@ const Tables = () => {
                             <td  className={styles.data}>{data.createdAt}</td>
                             <td className={styles.data}>
                                 
-                                    <img src="./src/assets/pendingpill.png" alt="" />
+                                    <img src="/assets/pendingpill.png" alt="" />
                                     </td>
                             
                             
                             <td className={styles.dots}> 
                          
-                              <img className={styles.dots} src="./src/assets/threedots.png" alt="" />
+                              <img className={styles.dots} src="/assets/threedots.png" alt="" />
                              </td>
                         
                              <div className={styles.hr}></div>

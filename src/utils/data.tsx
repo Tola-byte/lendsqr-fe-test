@@ -1,99 +1,99 @@
 export const data = [
     {
-        img: "./src/assets/user-friends.png",
+        img: "/assets/user-friends.png",
         text: "Users"
     },
     {
-        img: "./src/assets/guarantors.png",
+        img: "/assets/guarantors.png",
         text: "Guarantors"
     },
      {
-        img: "./src/assets/naira.png",
+        img: "/assets/naira.png",
         text: "Loans"
      },
     {
-        img: "./src/assets/decisionmodels.png",
+        img: "/assets/decisionmodels.png",
         text: "Decision Models"
     },
     {
-        img: "./src/assets/piggy-bank.png",
+        img: "/assets/piggy-bank.png",
         text: "Savings"
     },
     {
-        img: "./src/assets/loans.png",
+        img: "/assets/loans.png",
         text: "Loan Request"
     },
     {
-        img:"./src/assets/user-check.png",
+        img:"/assets/user-check.png",
         text: "Whitelist"
     },
     {
-        img: "./src/assets/user-times.png",
+        img: "/assets/user-times.png",
         text: "Karma"
     },
     {
-        img:"./src/assets/sliders.png",
+        img:"/assets/sliders.png",
         text: "Preferences"
     },
     {
-        img:"./src/assets/badge.png",
+        img:"/assets/badge.png",
         text: "Fees and Pricing"
     },
     {
-        img:"./src/assets/clipboard.png",
+        img:"/assets/clipboard.png",
         text: "Audit logs"
     },
     {
-        img: "./src/assets/loans.png",
+        img: "/assets/loans.png",
         text: "Loan Products"
     },
     {
-        img:"./src/assets/savingsproduct.png",
+        img:"/assets/savingsproduct.png",
         text: "Savings Products"
     },
     {
-        img: "./src/assets/fees.png",
+        img: "/assets/fees.png",
         text: "Fees and Charges"
     },
     {
-        img: "./src/assets/transactions.png",
+        img: "/assets/transactions.png",
         text: "Transactions"
     },
     {
-        img: "./src/assets/services.png",
+        img: "/assets/services.png",
         text: "Services"
     },
     {
-        img: "./src/assets/serviceacc.png",
+        img: "/assets/serviceacc.png",
         text: "Service Accounts"
     },
     {
-        img: "./src/assets/settlements.png",
+        img: "/assets/settlements.png",
         text: "Settlements"
     },
     {
-        img: "./src/assets/reports.png",
+        img: "/assets/reports.png",
         text: "Reports"
     }
 ]
 
 export const cards = [{
-    img: "./src/assets/users.png",
+    img: "/assets/users.png",
     title: "USERS",
     value: "2,453"
 },
 {
-    img: "./src/assets/activeusers.png",
+    img: "/assets/activeusers.png",
     title: "ACTIVE USERS",
     value: "2,453"
 },
 {
-    img: "./src/assets/loanusers.png",
+    img: "/assets/loanusers.png",
     title: "USERS WITH LOANS",
     value: "12,453"
 },
 {
-    img: "./src/assets/usersavings.png",
+    img: "/assets/usersavings.png",
     title: "USERS WITH SAVINGS",
     value: "102,453"
 }
@@ -103,7 +103,7 @@ export const datadetails = [{
     username: "Adedeji",
     number: "08078903721",
     email: "adedeji@lendsqr.com",
-    status: "./src/assets/inactive.png",
+    status: "/assets/inactive.png",
     date: "May 15, 2020 10:00 AM",
     
 
@@ -113,7 +113,7 @@ organisation: "Irorun",
     username: "Debby Ogana",
     number: "08160780928",
     email: "debby2@irorun.com",
-    status: "./src/assets/pendingpill.png",
+    status: "/assets/pendingpill.png",
     date: "April 30, 2020 10:00 AM",
 },
 {
@@ -121,23 +121,7 @@ organisation: "Irorun",
     username: "Grace Effiom",
     number: "07060780922",
     email: "grace@lendstar.com",
-    status: "./src/assets/blacklistedpill.png",
-    date: "April 30, 2020 10:00 AM",
-},
-{
-    organisation: "Lendsqr",
-    username: "Tosin Dokunmu",
-    number: "0703309226",
-    email: "tosin@lendsqr.com",
-    status: "./src/assets/pendingpill.png",
-    date: "April 10, 2020 10:00 AM",
-},
-{
-    organisation: "Lendstar",
-    username: "Grace Effiom",
-    number: "07060780922",
-    email: "grace@lendstar.com",
-    status: "./src/assets/activepill.png",
+    status: "/assets/blacklistedpill.png",
     date: "April 30, 2020 10:00 AM",
 },
 {
@@ -145,7 +129,7 @@ organisation: "Irorun",
     username: "Tosin Dokunmu",
     number: "0703309226",
     email: "tosin@lendsqr.com",
-    status: "./src/assets/activepill.png",
+    status: "/assets/pendingpill.png",
     date: "April 10, 2020 10:00 AM",
 },
 {
@@ -153,7 +137,7 @@ organisation: "Irorun",
     username: "Grace Effiom",
     number: "07060780922",
     email: "grace@lendstar.com",
-    status: "./src/assets/blacklistedpill.png",
+    status: "/assets/activepill.png",
     date: "April 30, 2020 10:00 AM",
 },
 {
@@ -161,7 +145,7 @@ organisation: "Irorun",
     username: "Tosin Dokunmu",
     number: "0703309226",
     email: "tosin@lendsqr.com",
-    status: "./src/assets/inactive.png",
+    status: "/assets/activepill.png",
     date: "April 10, 2020 10:00 AM",
 },
 {
@@ -169,7 +153,23 @@ organisation: "Irorun",
     username: "Grace Effiom",
     number: "07060780922",
     email: "grace@lendstar.com",
-    status: "./src/assets/inactive.png",
+    status: "/assets/blacklistedpill.png",
+    date: "April 30, 2020 10:00 AM",
+},
+{
+    organisation: "Lendsqr",
+    username: "Tosin Dokunmu",
+    number: "0703309226",
+    email: "tosin@lendsqr.com",
+    status: "/assets/inactive.png",
+    date: "April 10, 2020 10:00 AM",
+},
+{
+    organisation: "Lendstar",
+    username: "Grace Effiom",
+    number: "07060780922",
+    email: "grace@lendstar.com",
+    status: "/assets/inactive.png",
     date: "April 30, 2020 10:00 AM",
 },
 ]

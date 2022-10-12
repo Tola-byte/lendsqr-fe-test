@@ -12,7 +12,7 @@ const Dashboard = () => {
         <a href="/users">
         <div className={styles.contain}>
         <p className={styles.text}>Next</p>
-            <img src="./src/assets/arrow.png"  className = {styles.next} alt="" />
+            <img src="/assets/arrow.png"  className = {styles.next} alt="" />
          
         </div>
         </a>

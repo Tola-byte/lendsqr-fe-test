@@ -27,7 +27,7 @@ const Filter = () => {
             <label htmlFor="Organization">Date</label>
             <div className={styles.calendarinput}>
             <input type="date" placeholder='Date' className={styles.input}  />
-            <img src="./src/assets/calendar.png" className = {styles.calendar} alt="calendar" />
+            <img src="/assets/calendar.png" className = {styles.calendar} alt="calendar" />
             </div>
             </div>
 

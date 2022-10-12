@@ -10,14 +10,14 @@ const Sidebar = () => {
     <div className={styles.sidebar}>
 
     <div className={styles.contents}>
-        <img src="./src/assets/briefcase.png" alt="home" />
+        <img src="/assets/briefcase.png" alt="home" />
         <p className={styles.texts}>Switch Organization</p>
-        <img className={styles.arrow} src="./src/assets/arrowdown.png" alt="dropdown" />
+        <img className={styles.arrow} src="/assets/arrowdown.png" alt="dropdown" />
        
     </div>
 
     <div className={styles.contents}>
-    <img src="./src/assets/home.png" alt="home" />
+    <img src="/assets/home.png" alt="home" />
         <p className={styles.texts}>Dashboard</p>
     </div>
     <p className={styles.customers}>CUSTOMERS</p>
@@ -62,7 +62,7 @@ const Sidebar = () => {
          </div>
     <p className={styles.customers}>BUSINESSES</p>
     <div className={styles.contents}>
-        <img src="./src/assets/briefcase.png" alt="home" />
+        <img src="/assets/briefcase.png" alt="home" />
         <p className={styles.texts}>Organization</p>
     </div>
     <div className={styles.contents}>

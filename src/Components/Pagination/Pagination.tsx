@@ -9,13 +9,13 @@ const Pagination = () => {
 
 
         <div className={styles.button}>
-            <img src="./src/assets/prev-btn.png" alt="prev" />
+            <img src="/assets/prev-btn.png" alt="prev" />
             <p>1</p>
             <p>2</p>
             <p>3</p>
             <p>...</p>
             <p>16</p>
-            <img src="./src/assets/next-btn.png" alt="next" />
+            <img src="/assets/next-btn.png" alt="next" />
         </div>
 </div>
   )

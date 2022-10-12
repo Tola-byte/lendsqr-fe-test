@@ -39,7 +39,7 @@ function Profile() {
     <div>
         <a href="/users">
         <div className={styles.contain}>
-            <img src="./src/assets/arrow.png" alt="" />
+            <img src="/assets/arrow.png" alt="" />
             <p className={styles.text}>Back to Users</p>
         </div>
         </a>
@@ -60,7 +60,7 @@ function Profile() {
                 <p className={styles.code}>{data.accountNumber}</p>
                 </div>
                 <div className={styles.bar}></div>
-                <img src="./src/assets/tier.png" alt="tier" className={styles.tier} />
+                <img src="/assets/tier.png" alt="tier" className={styles.tier} />
                 <div className={styles.bar1}></div>
                 <div className={styles.infoname}>
                 <p className={styles.name}>₦{data.accountBalance}</p>

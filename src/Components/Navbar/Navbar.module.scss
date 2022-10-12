@@ -1,0 +1,117 @@
+@import "./src/styles/variables.scss";
+@import "./src/styles/mixins.scss";
+
+
+.navcontainer{
+    display: flex;
+    flex-direction: row;
+    width: 98.5vw !important;
+    align-content: space-between;
+    //margin-top: -300px;
+    position: absolute;
+    top:0px !important;
+    box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+    //margin-bottom: 100%;
+    
+    
+}
+
+.logo{
+        //margin-top: -10rem;
+       margin-left: 2rem;
+       width: 157px;
+       height: 30px;
+       //margin-bottom: 70px;
+}
+.avatar{
+    height: 40px !important;
+    width: 40px;
+    margin-top: -10px !important;
+    
+}
+.dropdown{
+    height: 5px;
+    padding-top: 7px;
+    margin-left: -23px;
+}
+.input{
+    //height: px;
+    background: #FFFFFF;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 18px;
+    width: 287px !important;
+}
+.input:focus{
+    outline: 1px solid rgba(84, 95, 125, 0.15)
+}
+.navicons{
+    display: flex;
+    margin-left: 30%;
+    margin-top: 50px;
+    height: 20px;
+    gap: 30px;
+    a{
+        text-decoration-line: underline;
+        font-size: 12px;
+        color: #213F7D;
+    }
+}
+.name{
+    margin-top: -3px;
+    font-size: 12px;
+    color: #213F7D;
+    margin-left: -25px;
+}
+.show{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+/* identical to box height */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 9;
+    color: #fff;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #39CDCC;
+    height: 33px;
+    width: 41.2px;
+    margin-top: 1px;
+    margin-left: -42px;
+    padding-top: 7px;
+
+    cursor: pointer;
+    img{
+        padding-top: 8px;
+        padding-left: 12px;
+    }
+}
+.searchbox{
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    
+}
+.contain{
+    display: flex;
+    width: 50%;
+    margin-top: 40px;
+    height: 70px;
+}
+.search{
+    height: 20px;
+    width:30px;
+   
+    margin-left: -20px;
+}

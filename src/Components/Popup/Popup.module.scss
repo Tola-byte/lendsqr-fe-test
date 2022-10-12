@@ -1,0 +1,30 @@
+@import "./src/styles/variables.scss";
+@import "./src/styles/mixins.scss";
+
+.card{
+    
+position: absolute;
+width: 180px;
+height: 130px;
+left: 995px;
+top: 575px;
+
+background: #FFFFFF;
+border: 1px solid rgba(84, 95, 125, 0.04);
+box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+border-radius: 4px;
+}
+.popup{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    margin-left: 18px;
+}
+.data{
+
+font-weight: 800;
+font-size: 12px;
+line-height: 16px;
+
+color: #545F7D;
+}

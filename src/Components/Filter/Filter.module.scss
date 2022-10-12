@@ -1,0 +1,118 @@
+@import "./src/styles/variables.scss";
+@import "./src/styles/mixins.scss";
+
+
+.form{
+    width: 300px;
+}
+.parent{
+    background: #FFFFFF;
+    border: 1px solid rgba(84, 95, 125, 0.14);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    position: absolute;
+    z-index: 9;
+    left: 300px;
+    top: 450px !important;
+    width: 235px !important;
+    padding: 10px;
+    margin: auto;
+}
+.calendarinput{
+    display: flex;
+}
+.calendar{
+    width: 11px;
+    position: relative;
+    margin-top: 15px;
+    height: 12px;
+    position: relative;
+    z-index: -9;
+    cursor: pointer;
+    margin-left: -21px;
+}
+.fields{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    label{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #545F7D;
+    }
+     select{
+        background: #FFFFFF;
+        opacity: 0.35;
+        padding: 6px;
+        height: 35px;
+        border: 1px solid #213F7D;
+        border-radius: 8px;
+        width: 210px !important;
+
+    }
+    
+}
+.input{
+    background: #fff;
+        height: 25px;
+        padding: 6px;
+        border: 1px solid #213F7D;
+        border-radius: 8px;
+        width: 195px;
+        opacity: 0.35;
+       color: black !important;
+}
+.input:focus{
+    opacity: 1;
+}
+.filter{
+width: 98px;
+height: 40px;
+left: 490px;
+top: 1020px;
+color : #fff;
+background: #39CDCC;
+border: 1px solid #39CDCC;
+border-radius: 8px;
+cursor: pointer;
+p{
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+}
+}
+.filter:hover{
+    background:  rgba(2, 141, 140, 1);
+    outline: none;
+   
+}
+.reset{
+    width: 98px;
+height: 40px;
+left: 490px;
+top: 1020px;
+color : #213f7d;
+background: #fff;
+border: 1px solid #213F7D;
+border-radius: 8px;
+cursor: pointer;
+p{
+    font-weight: 600;
+    font-size: 14px;
+    color: #545F7D;
+    margin-top: 10px;
+}
+}
+.reset:hover{
+    background:  rgb(186, 226, 226);
+}
+.setButton{
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+    margin-left: 10px;
+}

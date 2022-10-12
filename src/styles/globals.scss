@@ -1,0 +1,27 @@
+@import '@styles/variables.scss';
+@import '@styles/mixins.scss';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  //width: 100%;
+  
+}
+input{
+    //height: px;
+    background: #FFFFFF;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    width: 287px !important;
+}
+input:focus{
+    outline: 1px solid rgba(84, 95, 125, 0.15)
+}

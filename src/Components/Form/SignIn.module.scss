@@ -1,0 +1,127 @@
+@import "./src/styles/variables.scss";
+@import "./src/styles/mixins.scss";
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 50px;
+  gap: 57px;
+  align-items: center;
+  width: 1000px;
+  margin-top: 30px;
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 307px;
+  }
+}
+.images{
+    //background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+ 
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+.logo{
+    //margin-top: -10rem;
+   margin-left: 2rem;
+   width: 157px;
+   margin-bottom: 70px;
+}
+.images{
+    //width: 600px;
+    background: whitesmoke ;
+    height: 100vh;
+    position: relative;
+    z-index: -9;
+
+}
+.passwordfield{
+    display: flex;
+    flex-direction: row;
+    width: 340px;
+}
+.show{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+/* identical to box height */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 9;
+    color: #39CDCC;
+    margin-left: -60px;
+    padding-top: 7px;
+    cursor: pointer;
+}
+.content{
+    // background-color: #39CDCC;
+    // width: 50%;
+}
+.title{
+    h2{
+    color: #213F7D;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: left;
+    }
+    h5{
+        color: #545F7D;
+        font-weight: 200;
+        margin-top: -18px;
+        text-align: left;
+        //margin-left: 0.3rem;
+        font-size: 14px;
+        line-height: 27px;
+    }
+}
+.forgot{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+/* identical to box height */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #39CDCC;
+}
+.focus p:hover{
+    background-color:  rgba(2, 141, 140, 1);
+}
+.input{
+    //height: px;
+    background: #FFFFFF;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    width: 287px !important;
+}
+.input:focus{
+    outline: 1px solid rgba(84, 95, 125, 0.15)
+}
+.submit{
+    width: 322.5px;
+    height: 48px;
+    background-color: #39CDCC;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.submit:hover{
+    background-color:  rgba(2, 141, 140, 1);
+}

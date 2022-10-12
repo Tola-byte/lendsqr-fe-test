@@ -1,0 +1,33 @@
+@import "./src/styles/variables.scss";
+@import "./src/styles/mixins.scss";
+
+.contain{
+    display: flex;
+    position: absolute;
+    left: 1000px;
+    top: 140px;
+    gap: 5px;
+   
+}
+.next{
+    height: 10px;
+    transform: rotate(-180deg);
+}
+.text{
+margin-top: -7px;
+font-size: small;
+color: #213F7D;
+}
+.textback{
+    top: 120px !important;
+    font-size: small;
+    left: 335px;
+    position: absolute;
+color: #213F7D;
+}
+.back{
+    transform: rotate(0deg) !important;
+    left: 300px;
+    top: 140px;
+    position: absolute;
+}

@@ -1,0 +1,58 @@
+// // @import "./src/styles/variables.scss";
+// // @import "./src/styles/mixins.scss";
+
+
+.table{
+   
+    position: absolute;
+    left: 290px;
+    top: 400px;
+    width: 875px;
+    height: 640px;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+}
+// .rowhead{
+//    padding-top: 30px !important;
+//     display: flex;
+//     flex-direction: row;
+//    gap:40px;
+// }
+.data{
+ font-weight: 100 !important;
+    padding: 15px;
+font-size: 10px;
+line-height: 10px;
+color: #545F7D;
+}
+
+.pagination{
+    display: flex;
+    width: 500px;
+}
+.hr{
+    height: 2px solid green;
+
+background: rgba(33, 63, 125, 0.1);
+}
+.dots{
+    padding-left:10px !important;
+    //padding-bottom: 7px;
+    padding-right: 10px;
+}
+.head{
+   display: flex;
+   flex-direction: row;
+   padding-left: 12px;
+   gap: 8px;
+   margin-top: 10px;
+    span{
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        display: flex;
+        gap: 5px;
+        color: #545F7D;
+    }
+}

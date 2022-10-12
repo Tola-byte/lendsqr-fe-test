@@ -1,0 +1,53 @@
+@import "./src/styles/variables.scss";
+@import "./src/styles/mixins.scss";
+
+
+.pagination{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 300px;
+    top: 6750px;
+    width: 50%;
+}
+.showing{
+    font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+
+color: #545F7D;
+}
+.input{
+    background-color: #fff;
+    width: 30px;
+    color: #545F7D;
+    background: rgba(33, 63, 125, 0.1);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.button{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    right: -195px;
+    padding-top: 12px;
+    p{
+        padding-left: 8px;
+        padding-right: 10px;
+        font-size: 10px;
+        line-height: 19px;
+        cursor: pointer;
+/* identical to box height */
+        color: #545F7D;
+    }
+    img{
+        height: 20px;
+        margin-top: 8px;
+        cursor: pointer;
+    }
+}

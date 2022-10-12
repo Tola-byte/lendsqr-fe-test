@@ -1,7 +1,12 @@
 //import { data } from '@utils/data'
 import React, { useEffect , useState} from 'react'
 import styles from "./Navbar.module.scss"
+import { useNavigate } from 'react-router-dom'
 const Navbar = () => {
+    const navigate = useNavigate();
+    const routehome = () => {
+        navigate('/')
+    }
     // const [user, setUser] = useState[()=>{
     //     return JSON.parse(window.localStorage.getItem('MY_USERS_DETAILS'))
        
@@ -14,7 +19,7 @@ const Navbar = () => {
   return (
         <div className={styles.navcontainer}>
             <div className={styles.contain}>
-                <a href="/">
+                <a onClick = {routehome}>
                 <img className = {styles.logo} src="/assets/Group.png" alt="lendsqr" />
                 </a>
        

@@ -29,8 +29,9 @@ function Profile() {
       
     }
     useEffect(() =>{
-        window.localStorage.setItem('MY_USERS_DETAILS', JSON.stringify(data));
+       
         fetchData();
+        window.localStorage.setItem('MY_USERS_DETAILS', JSON.stringify(data));
         }, [fetchData])
 
 

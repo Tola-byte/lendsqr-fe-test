@@ -3,7 +3,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import styles from './Tables.module.scss'
 const Tables = () => {
-    const [data, setData] =useState([]);
+    const [data, setData] =useState<any[]>([]);
     useEffect(() => {
         axios.get(`https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users`)
         .then((response) => {

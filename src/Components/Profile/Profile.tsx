@@ -4,7 +4,7 @@ import axios from 'axios'
 import { infoheaders } from '../../utils/data'
 function Profile() {
     const [data, setData] = useState(()=>{
-        return JSON.parse(window.localStorage.getItem('MY_USERS_DETAILS'))
+        return JSON.parse(window.localStorage.getItem('MY_USERS_DETAILS')!)
     });
     //const [data, setItems] = useState({});
 

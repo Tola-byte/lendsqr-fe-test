@@ -19,20 +19,17 @@ const Users = () => {
   return (
     <div>
          <Nav/>
-         <div>
-         <a onClick={routenext}>
-          
+         <a className={styles.link} onClick={routenext}>
         <div className={styles.contain}>
+        
         <p className={styles.text}>Next</p>
             <img src="/assets/arrow.png" className={styles.next} alt="" />
             </div>
         </a>
-        <a onClick={routeback}>
+        <a className={styles.link} onClick={routeback}>
             <img src="/assets/arrow.png" className={styles.back} alt="" />
             <p className={styles.textback}>Back</p>
             </a>
-            </div>
-       
         <Sidebar/>
         <MainDashboard/>
         <Tables/>

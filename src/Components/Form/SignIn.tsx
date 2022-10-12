@@ -22,8 +22,7 @@ export const SignIn = () => {
   const navigate = useNavigate();
 
   const handleSubmission = () => {
-    // setEmail(email)
-    // setPassword(password)
+    
     navigate("/dashboard");
   }
 

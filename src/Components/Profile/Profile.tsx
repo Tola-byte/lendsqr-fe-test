@@ -2,7 +2,13 @@ import React, { useEffect , useState} from 'react'
 import styles from "./Profile.module.scss"
 import axios from 'axios'
 import { infoheaders } from '../../utils/data'
+import { useNavigate } from 'react-router-dom'
 function Profile() {
+    const navigate = useNavigate();
+
+    const backwards = () => {
+        navigate('/users')
+    }
     const [data, setData] = useState(()=>{
         return JSON.parse(window.localStorage.getItem('MY_USERS_DETAILS')!)
     });
@@ -37,7 +43,7 @@ function Profile() {
    
   return (
     <div>
-        <a href="/users">
+        <a className={styles.link} onClick={backwards}>
         <div className={styles.contain}>
             <img src="/assets/arrow.png" alt="" />
             <p className={styles.text}>Back to Users</p>
@@ -57,7 +63,7 @@ function Profile() {
                 <div className={styles.flexin}>
                 <div className={styles.infoname}>
                 <p className={styles.name}>{data?.profile?.firstName} {data?.profile?.lastName}</p>
-                <p className={styles.code}>{data.accountNumber}</p>
+                <p className={styles.code}>{data?.accountNumber}</p>
                 </div>
                 <div className={styles.bar}></div>
                 <img src="/assets/tier.png" alt="tier" className={styles.tier} />

@@ -51,3 +51,13 @@ color: #545F7D;
         cursor: pointer;
     }
 }
+@include responsive-smartphones{
+    .pagination{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        left: 300px;
+        top: 6780px;
+        width: 50%;
+    }
+}
